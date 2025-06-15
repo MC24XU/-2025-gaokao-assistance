@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2024高考志愿推荐系统</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switch">
+      <button onclick="setLang('zh')">中文</button>
+      <button onclick="setLang('en')">English</button>
+    </div>
+    <h1 data-i18n="title">2024高考志愿推荐</h1>
+    <form id="query-form">
+      <label data-i18n="province">省份：
+        <select id="province">
+          <option value="河南">河南</option>
+          <option value="山东">山东</option>
+        </select>
+      </label>
+      <label data-i18n="score">分数：
+        <input type="number" id="score" min="100" max="750" required />
+      </label>
+      <label data-i18n="type">科类：
+        <select id="type">
+          <option value="理科">理科</option>
+          <option value="文科">文科</option>
+        </select>
+      </label>
+      <button type="submit" data-i18n="submit">查询</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
