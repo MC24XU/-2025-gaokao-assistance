@@ -1,0 +1,58 @@
+body {
+  font-family: -apple-system, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+h1 {
+  text-align: center;
+}
+label {
+  display: block;
+  margin: 15px 0 5px;
+}
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#result {
+  margin-top: 20px;
+}
+.lang-switch {
+  text-align: right;
+}
+.lang-switch button {
+  font-size: 0.9rem;
+  margin-left: 10px;
+  background: transparent;
+  color: #333;
+  border: 1px solid #ccc;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
