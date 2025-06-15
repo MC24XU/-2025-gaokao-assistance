@@ -1,0 +1,11 @@
+[services.api]
+path = "api"
+startCommand = "npm install && node index.js"
+
+[services.crawler]
+path = "crawler"
+startCommand = "npm install && node crawler.js"
+
+[catalog.cron.daily_crawling]
+service = "crawler"
+schedule = "@daily"
